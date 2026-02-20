@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansoor Channa Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Islamic Pattern Background */
+        body {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M20 20 L80 20 L80 80 L20 80 Z" fill="none" stroke="%231a4d3e" stroke-width="1"/><path d="M30 30 L70 30 L70 70 L30 70 Z" fill="none" stroke="%238b2c2c" stroke-width="1"/><circle cx="50" cy="50" r="15" fill="none" stroke="%23c9a13b" stroke-width="1"/></svg>');
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Mansoor Channa</h1>
+                <p>photography</p>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="mahafil.html">Mahafil</a>
+                <a href="current-event.html">Current Event</a>
+                <a href="about.html">About</a>
+            </div>
+            
+            <div class="header-buttons">
+                <a href="https://www.youtube.com/@mansoorchanna0786/" target="_blank" class="youtube-btn">▶ YouTube Channel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Islamic Calligraphy -->
+    <div class="hero">
+        <div class="container">
+            <h1>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h1>
+            <h2>Capturing Islamic Moments & Memories</h2>
+            <p>Welcome to Mansoor Channa Photography - Preserving your precious moments</p>
+            <a href="gallery.html" class="btn">View Gallery</a>
+        </div>
+    </div>
+
+    <!-- Featured Gallery Section -->
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Galleries</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/1a4d3e/white?text=Event" alt="Event">
+                    <p>Events</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/8b2c2c/white?text=Mahafil" alt="Mahafil">
+                    <p>Mahafil</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/c9a13b/white?text=Current" alt="Current">
+                    <p>Current Event</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/1a4d3e/white?text=Gallery" alt="Gallery">
+                    <p>Gallery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <p class="phone">📞 03112358708</p>
+                <p class="phone">📞 03063644030</p>
+                <p class="contact-person">Mansoor Channa</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mansoor Channa Photography. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Upload Button -->
+    <div class="upload-fab">
+        <button onclick="openUploadPanel()" class="upload-btn">📤 Upload</button>
+    </div>
+
+    <!-- Upload Panel -->
+    <div id="uploadPanel" class="upload-panel">
+        <div class="upload-panel-content">
+            <h3>Upload to D: Drive</h3>
+            <p>Click Upload to save files to D:\Mansoor-Photos\</p>
+            <button onclick="runBatchUpload()">📤 Start Upload</button>
+            <button onclick="closeUploadPanel()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openUploadPanel() {
+            document.getElementById('uploadPanel').style.display = 'flex';
+        }
+
+        function closeUploadPanel() {
+            document.getElementById('uploadPanel').style.display = 'none';
+        }
+
+        function runBatchUpload() {
+            window.open('run-upload.html', 'Upload', 'width=500,height=300');
+            closeUploadPanel();
+        }
+    </script>
+</body>
+</html>

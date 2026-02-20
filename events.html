@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Mansoor Channa Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Mansoor Channa</h1>
+                <p>photography</p>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="mahafil.html">Mahafil</a>
+                <a href="current-event.html">Current Event</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="header-buttons">
+                <a href="https://www.youtube.com/@mansoorchanna0786/" target="_blank" class="youtube-btn">▶ YouTube Channel</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero" style="padding: 40px 20px;">
+        <div class="container">
+            <h1>Our Events</h1>
+            <p>Memorable moments from our gatherings</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/1a4d3e/white?text=Eid+2024" alt="Event">
+                    <p>Eid Milan 2024</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/8b2c2c/white?text=Ramadan+2023" alt="Event">
+                    <p>Ramadan Iftar 2023</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/c9a13b/white?text=Milad+2023" alt="Event">
+                    <p>Milad un Nabi 2023</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x300/1a4d3e/white?text=Conference+2022" alt="Event">
+                    <p>Annual Conference 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mansoor Channa Photography. All rights reserved.</p>
+        </div>
+    </div>
+
+    <div class="upload-fab">
+        <button onclick="openUploadPanel()" class="upload-btn">📤</button>
+    </div>
+
+    <div id="uploadPanel" class="upload-panel">
+        <div class="upload-panel-content">
+            <h3>Upload to D: Drive</h3>
+            <button onclick="runBatchUpload()">📤 Start Upload</button>
+            <button onclick="closeUploadPanel()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openUploadPanel() {
+            document.getElementById('uploadPanel').style.display = 'flex';
+        }
+        function closeUploadPanel() {
+            document.getElementById('uploadPanel').style.display = 'none';
+        }
+        function runBatchUpload() {
+            window.open('run-upload.html', 'Upload', 'width=500,height=300');
+            closeUploadPanel();
+        }
+    </script>
+</body>
+</html>

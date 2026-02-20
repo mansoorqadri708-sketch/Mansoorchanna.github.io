@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mansoor Channa Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Mansoor Channa</h1>
+                <p>photography</p>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="mahafil.html">Mahafil</a>
+                <a href="current-event.html">Current Event</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+            <div class="header-buttons">
+                <a href="https://www.youtube.com/@mansoorchanna0786/" target="_blank" class="youtube-btn">▶ YouTube Channel</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">About Mansoor Channa Photography</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <img src="https://placehold.co/200x200/c9a13b/white?text=MC" style="border-radius: 50%; margin-bottom: 30px; width: 200px; height: 200px;">
+                <p style="font-size: 18px; line-height: 1.8; margin-bottom: 30px;">
+                    Welcome to Mansoor Channa Photography, dedicated to capturing the beauty of Islamic events, 
+                    Mahafil, and community gatherings. We specialize in preserving precious moments with 
+                    respect and artistic vision.
+                </p>
+                <div style="background-color: #f0e9e0; padding: 30px; border-radius: 10px;">
+                    <h3 style="color: #1a4d3e; margin-bottom: 20px;">Contact Information</h3>
+                    <p style="font-size: 20px; color: #8b2c2c;">📞 0312358708</p>
+                    <p style="font-size: 20px; color: #8b2c2c;">📞 03063644030</p>
+                    <p style="font-size: 18px; color: #1a4d3e; margin-top: 20px;">Mansoor Channa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mansoor Channa Photography. All rights reserved.</p>
+        </div>
+    </div>
+
+    <div class="upload-fab">
+        <button onclick="openUploadPanel()" class="upload-btn">📤</button>
+    </div>
+
+    <div id="uploadPanel" class="upload-panel">
+        <div class="upload-panel-content">
+            <h3>Upload to D: Drive</h3>
+            <button onclick="runBatchUpload()">📤 Start Upload</button>
+            <button onclick="closeUploadPanel()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openUploadPanel() {
+            document.getElementById('uploadPanel').style.display = 'flex';
+        }
+        function closeUploadPanel() {
+            document.getElementById('uploadPanel').style.display = 'none';
+        }
+        function runBatchUpload() {
+            window.open('run-upload.html', 'Upload', 'width=500,height=300');
+            closeUploadPanel();
+        }
+    </script>
+</body>
+</html>
