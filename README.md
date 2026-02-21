@@ -28,11 +28,11 @@ This is my personal website built to display my:
 
 Check out the live website: [Mansoorchanna.github.io](https://Mansoorchanna.github.io)
 
-## 📞 Contact Me
+## 📞 Contact Me 923112358708
 
 - GitHub: [@Mansoorchanna](https://github.com/Mansoorchanna)
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn URL]
+- Email: [mansoorchanna0786@gmail.com]
+- LinkedIn: [@mansoorchannalinknd.com]
 - [Add other social links]
 
 ## 📄 License
