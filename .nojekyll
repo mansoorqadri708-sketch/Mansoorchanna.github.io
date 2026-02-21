@@ -1,0 +1,7 @@
+# Create an empty .nojekyll file in your repository root
+touch .nojekyll
+
+# Add it to git
+git add .nojekyll
+git commit -m "Add .nojekyll to bypass Jekyll"
+git push origin main
